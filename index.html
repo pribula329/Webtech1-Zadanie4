@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lukáš Pribula - Zadanie 4</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssStyle.css">
+
+
+</head>
+<body>
+<header>
+    <nav>
+        <br>
+        <h1>Generátor funkcie f()=x*y</h1>
+    </nav>
+</header>
+
+<section class="container">
+
+    <div class="row">
+        <div class= "main">
+        <div class=" form-group ">
+            <h4>Vyplňte tabuľku</h4>
+            <label for="hodnotaX">Hodnota X</label><br>
+            <input type="number" id="hodnotaX" name="hodnotaX" placeholder="Zadajte hodnotu x od 1 po 9"
+                   onchange="kontrolaVstupov(1)" required>
+            <br><span id="upozornenieX"></span><br>
+
+            <label for="hodnotaY">Hodnota Y</label><br>
+            <input type="number" id="hodnotaY" name="hodnotaY" placeholder="Zadajte hodnotu y od 1 po 9"
+                   onchange="kontrolaVstupov(2)" required>
+            <br><span id="upozornenieY"></span><br><br>
+
+            <button type="submit" onclick="zobraz()">Generuj</button>
+
+
+
+        </div>
+        </div>
+    </div>
+    <aside id="tabulka1">
+        <div id="tabulka">
+            <button id="off" onclick="off()">Zatvor</button><br><br>
+        </div>
+    </aside>
+
+
+
+</section>
+
+
+<script src="javascript.js"></script>
+</body>
+</html>
